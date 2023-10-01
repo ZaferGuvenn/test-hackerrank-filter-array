@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="5dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:text="@string/name_text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/salary_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/employee_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:maxLength="10"
+        android:textColor="@color/black"
+        android:text="name"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/name_text"
+        app:layout_constraintStart_toEndOf="@id/name_text"
+        app:layout_constraintTop_toTopOf="@id/name_text" />
+
+    <TextView
+        android:id="@+id/salary_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:textColor="@color/black"
+        android:text="@string/salary_text"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/name_text"
+        app:layout_constraintTop_toBottomOf="@id/name_text" />
+
+    <TextView
+        android:id="@+id/employee_salary_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:layout_marginStart="15dp"
+        android:maxLength="7"
+        android:textColor="@color/black"
+        android:text="salary"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/salary_text"
+        app:layout_constraintStart_toEndOf="@id/salary_text"
+        app:layout_constraintTop_toTopOf="@id/salary_text" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/business_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_logo"
+        app:layout_constraintBottom_toBottomOf="@id/delete_employee_btn"
+        app:layout_constraintEnd_toStartOf="@id/delete_employee_btn"
+        app:layout_constraintTop_toTopOf="@id/delete_employee_btn" />
+
+    <Button
+        android:id="@+id/delete_employee_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:text="@string/delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

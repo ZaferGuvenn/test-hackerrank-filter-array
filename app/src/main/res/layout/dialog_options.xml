@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/name_part_name"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/min_salary"
+        app:layout_constraintEnd_toStartOf="@id/name_ed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name_ed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:maxLength="10"
+
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/name"
+        app:layout_constraintTop_toTopOf="@id/name" />
+
+    <TextView
+        android:id="@+id/min_salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/min_salary"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/max_salary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name" />
+
+    <EditText
+        android:id="@+id/min_salary_ed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/min_salary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/name_ed"
+        app:layout_constraintTop_toTopOf="@id/min_salary" />
+
+    <TextView
+        android:id="@+id/max_salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/max_salary"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/chb_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/min_salary" />
+
+    <EditText
+        android:id="@+id/max_salary_ed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/max_salary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/name_ed"
+        app:layout_constraintTop_toTopOf="@id/max_salary" />
+
+
+    <CheckBox
+        android:id="@+id/chb_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/chb_1"
+        app:layout_constraintTop_toBottomOf="@id/max_salary" />
+
+    <View
+        android:id="@+id/divider_1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/chb_1"
+        app:layout_constraintBottom_toTopOf="@id/chb_2"/>
+
+
+    <CheckBox
+        android:id="@+id/chb_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/chb_2"
+        app:layout_constraintTop_toBottomOf="@id/divider_1" />
+
+    <CheckBox
+        android:id="@+id/chb_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/chb_3"
+        app:layout_constraintTop_toBottomOf="@id/chb_2" />
+
+
+    <View
+        android:id="@+id/divider_2"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/chb_3"
+        app:layout_constraintBottom_toTopOf="@id/chb_4"/>
+
+    <CheckBox
+        android:id="@+id/chb_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/chb_4"
+        app:layout_constraintTop_toBottomOf="@id/chb_3" />
+
+    <CheckBox
+        android:id="@+id/chb_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/chb_5"
+        app:layout_constraintTop_toBottomOf="@id/chb_4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

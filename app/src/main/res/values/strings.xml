@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">HackerRank</string>
+    <string name="name_text">Name: </string>
+    <string name="salary_text">Salary: </string>
+    <string name="add">Add</string>
+    <string name="et_name_hint">Name</string>
+    <string name="et_salary_hint">Salary</string>
+    <string name="delete">Delete</string>
+    <string name="clear_data">Clear data</string>
+    <string name="filters">Filters</string>
+    <string name="exist_dialog_title">I can\'t add an employee</string>
+    <string name="dialog_message">An employee with that name already exists</string>
+
+    <string name="filter_all">Find all employees</string>
+    <string name="filter_name">Find all employees whose name equals to \"%1$s\"</string>
+    <string name="filter_part_name">Find all employees whose name contains \"%1$s\"</string>
+    <string name="filter_more_than">Find all employees whose salary is more than \"%1$.2f\"</string>
+    <string name="filter_less_than">Find all employees whose salary is less than \"%1$.2f\"</string>
+
+    <string name="options_dialog_title">Options</string>
+
+    <string name="name_part_name">NAME or PART of the NAME</string>
+    <string name="min_salary">MIN salary</string>
+    <string name="max_salary">MAX salary</string>
+
+    <string name="chb_1">No filter</string>
+    <string name="chb_2">Name equals to \"%1$s\"</string>
+    <string name="chb_3">Name contains \"%1$s\"</string>
+    <string name="chb_4">Salary is less than %1$s</string>
+    <string name="chb_5">Salary is more than %1$s</string>
+
+</resources>
